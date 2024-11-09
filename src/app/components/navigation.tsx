@@ -55,7 +55,7 @@ function processPage(page: Page, index: number, pathname: string) {
 export function Navigation() {
   const pathname = usePathname(); //usePathname is a Client Component hook that lets you read the current URL's pathname
   return (
-    <ul className="flex space-x-4 mb-4">
+    <ul className="flex space-x-4 mb-2 justify-center mt-4">
       {pages.map((page, index) => processPage(page, index, pathname))}
     </ul>
   );
