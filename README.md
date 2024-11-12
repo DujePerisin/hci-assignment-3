@@ -28,3 +28,5 @@ Deploy your early Next.js draft webpage to Vercel or Netlify for public access a
 Deliverables
 
 Deployed Next.js web application accessible via a public URL (Vercel or Netlify). Place the link to your public website in the README.md file of your repository (please check README template).
+
+Vercel Refresh!!
