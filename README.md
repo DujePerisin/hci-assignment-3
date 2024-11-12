@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Project description
+This project will be based on my previous assignment where I was required to designed a sitemap and information flow of the website.
+Brief description of the targeted website:
 
-## Getting Started
+For this assignment, I envisioned a professional research blog website where the owner, an expert in their field, shares research findings, ideas and insights. The website will provide an easy way for visitors to reach out, featuring a contact page with a fill-out form for a more practical communication. Additionally, it will showcase a detailed summary of the owner’s professional travel appearances, including conferences attended as both a speaker and participant, to establish credibility and demonstrate the owner’s active role in the field. Finally, the website will feature an “About Me” page which will detailly showcase the owner’s career, complete with a list of academic achievements. This design could serve as a model for others at a similar stage in their respective careers.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project preview currently:
+- Link to the current version of the website deployed using Vercel: [**Vercel website link**](https://hci-assignment-3.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Information about the 3rd assignment from the subject's website (https://hci.mario-cagalj.from.hr/projektni-zadaci/3):
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Next.js - Deploying Application
+Rok: 14. stu, 2024.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+You will leverage the sitemap created in the previous assignment to develop a functional web application using Next. The focus of this assignment is on creating template pages, establishing routes, and enabling seamless navigation between pages. Visual design is not a priority.
+Aktivan
+Opis zadatka
+Set up Next.js project
 
-## Learn More
+Create a new Next.js project. Initialize template pages corresponding to the categories identified in the sitemap. Define routes for each template page, ensuring alignment with the sitemap structure. Enable navigation between pages. Use Next.js Link component for smooth transitions.
+Deploy to Vercel or Netlify
 
-To learn more about Next.js, take a look at the following resources:
+Deploy your early Next.js draft webpage to Vercel or Netlify for public access and test the navigation.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    Deploying Your Next.js App
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deliverables
 
-## Deploy on Vercel
+Deployed Next.js web application accessible via a public URL (Vercel or Netlify). Place the link to your public website in the README.md file of your repository (please check README template).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Vercel Refresh!!
