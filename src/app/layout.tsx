@@ -28,7 +28,10 @@ const metadataMap = {
 };*/
 
 export const metadata: Metadata = {
-  title: "HCI - dperis00",
+  title: {
+    template: "%s - dperis00 HCI2024/25",
+    default: "dperis00 HCI2024/25",
+  },
   description: "Research blog website where the owner, an expert in their field, shares research findings and ideas.",
 };
 

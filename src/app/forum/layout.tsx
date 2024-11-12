@@ -16,6 +16,9 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+export const metadata: Metadata = {
+  title: "Forum",
+};
 
 export default function ForumLayout({
   children,

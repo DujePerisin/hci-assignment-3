@@ -1,3 +1,9 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Business travels",
+}
+
 export default function Travel() {
   return (
     <main className="flex min-h-screen flex-col items-center p-10">
