@@ -15,27 +15,15 @@ type Page = {
 
 //Legacy code --- will be removed in future commits (part of hardcoding)
 const pages: Page[] = [
-    {title: "Home",
-      path: "/"
+    {title: "Tutorials",
+      path: "/education/tutorials",
     },
-    {title: "About me",
-      path: "/about",
+    {title: "Recommended readings",
+      path: "/education/references",
     },
-    {title: "Research Blogs",
-      path: "/blog",
+    {title: "F.A.Q.",
+      path: "/education/faq",
     },
-    {title: "Contact",
-      path: "/contact",
-    },
-    {title: "Education",
-      path: "/education",
-    },
-    {title: "Forum",
-      path: "/forum",
-    },
-    {title: "Business Travels",
-      path: "/travel",
-    }
   ];
   
 
@@ -44,15 +32,7 @@ function processPage(page: Page, index: number, pathname: string) {
     <li key={index}>
       <Link
         href={page.path}
-        className={
-            page.path === "/"
-              ? pathname === page.path
-                ? "font-extrabold"
-                : ""
-              : pathname.startsWith(page.path)
-              ? "font-extrabold"
-              : ""
-          }> 
+        className={pathname === page.path ? "font-extrabold" : ""}> 
         {page.title}
       </Link>
     </li> //highlighting the selected webpage (cool trick which notifies the user he has actually selected his desired website)
