@@ -1,22 +1,30 @@
 "use client"
 
 import { useEffect } from "react";
-import { createLeftImageArticle } from "./components/iconcards";
+import { createImageArticle1 } from "./components/iconcards";
 
 
 export default function Home() {
   
   useEffect(() => {
     // Add dynamic elements using the imported function
-    createLeftImageArticle(
+    createImageArticle1(
       "dynamic-content",
       "https://via.placeholder.com/800x400",
-      "This is some sample text for the dynamic element."
+      "This is some sample text for the dynamic element.",
+      "imageLeft"
     );
-    createLeftImageArticle(
+    createImageArticle1(
       "dynamic-content",
       "https://via.placeholder.com/800x400",
-      "Here’s another dynamically added section!"
+      "Here’s another dynamically added section!",
+      "imageRight"
+    );
+    createImageArticle1(
+      "dynamic-content",
+      "https://via.placeholder.com/800x400",
+      "This is some sample text for the dynamic element.",
+      "imageLeft"
     );
   }, []);
 
