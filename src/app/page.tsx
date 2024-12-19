@@ -3,6 +3,12 @@
 import { useEffect } from "react";
 import { createImageArticle1, createDynamicElement } from "./components/iconcards";
 
+interface Blog { //defined the blog structure as an interface to provide type safety and clarity for the data that we are working with. 
+  id: number;    //In TypeScript, interfaces are used to define the shape of objects, ensuring that all properties and their types are consistent across the application.
+  title: string; //* Clarification for myself <3 *//
+  body: string;
+}
+
 export default function Home() {
   useEffect(() => {
     const fetchBlogs = async () => {
