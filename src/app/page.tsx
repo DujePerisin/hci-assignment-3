@@ -18,7 +18,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchBlogs = async () => {
-      const res = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=10"); // fetching from JSONPlaceholder
+      const res = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=20"); // fetching from JSONPlaceholder
       const blogs = await res.json();
       setBlogs(blogs);
     };
@@ -29,19 +29,19 @@ export default function Home() {
     createImageArticle1(
       "dynamic-content",
       "/images/article800x400placeholder.png",
-      "This is some sample text for the dynamic element.",
+      "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
       "imageLeft"
     );
     createImageArticle1(
       "dynamic-content",
       "/images/article800x400placeholder.png",
-      "Here’s another dynamically added section!",
+      "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
       "imageRight"
     );
     createImageArticle1(
       "dynamic-content",
       "/images/article800x400placeholder.png",
-      "This is some sample text for the dynamic element.",
+      "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
       "imageLeft"
     );
   }, []); // ""empty dependency array to run only once after the initial render""
@@ -70,7 +70,7 @@ export default function Home() {
       <nav className="sticky top-0 bg-white shadow z-10">
         <div className="container mx-auto flex justify-between items-center p-4">
           <a href="#" className="text-xl font-bold text-gray-800">
-            My Blog
+            *iveblog
           </a>
           <ul className="flex space-x-6 text-gray-600">
             <li>
@@ -102,13 +102,14 @@ export default function Home() {
         <h1 className="text-center text-4xl font-bold mt-4">
           Welcome to My Blog
         </h1>
+        <h2 className="text-center font-bold mt-4">Minimum CSS so far, plan on developing further during the christmas holidays, Merry Christmas everyone!!</h2>
       </div>
 
       {/* left/right article section creation */}
       <div id="dynamic-content" className="container mx-auto mt-8"></div>
       {/* Blog Posts Section */}
       <section className="container mx-auto p-4">
-        <h1 className="text-center text-4xl font-bold mb-8">Blog Posts</h1>
+        <h1 className="text-left text-4xl font-bold mb-8">Blog Posts</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {currentBlogs.map((blog) => (
             <div
@@ -159,3 +160,5 @@ export default function Home() {
       </main>
   );
   }
+///////////////
+

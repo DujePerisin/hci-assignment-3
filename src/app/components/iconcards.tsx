@@ -9,7 +9,7 @@ export function createImageArticle1(
   
     if (dynamicContent) {
         const element = document.createElement("div");
-        element.className = "w-full mt-8 border-b pb-4 flex";
+        element.className = "w-full mt-8 pb-4 flex py-4 border-t border-black";
     
         // Create the image div
         const imageDiv = document.createElement("div");
