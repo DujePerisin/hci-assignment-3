@@ -1,10 +1,13 @@
 export default async function BlogPost({
     params,
   }: {
-    params: { id: string };
+    params: Promise<{ id: string }>;
   }) {
-    const { id } = await params; // safely accessing "id" while awaiting params to load properly to avoid errors
-  
+    //const { id } = params; // safely accessing "id" while awaiting params to load properly to avoid errors
+    
+    const resolvedParams = await params; // Await params here
+  const { id } = resolvedParams;
+
     // fetching the blog post data from JSONPlaceholder
     const res = await fetch(
       `https://jsonplaceholder.typicode.com/posts/${id}`,
