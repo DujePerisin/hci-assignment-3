@@ -28,19 +28,19 @@ export default function Home() {
     // will contain all the other dynamic element creation later (maybe contains now if i forgot to delete this comment)
     createImageArticle1(
       "dynamic-content",
-      "https://via.placeholder.com/800x400",
+      "/images/article800x400placeholder.png",
       "This is some sample text for the dynamic element.",
       "imageLeft"
     );
     createImageArticle1(
       "dynamic-content",
-      "https://via.placeholder.com/800x400",
+      "/images/article800x400placeholder.png",
       "Here’s another dynamically added section!",
       "imageRight"
     );
     createImageArticle1(
       "dynamic-content",
-      "https://via.placeholder.com/800x400",
+      "/images/article800x400placeholder.png",
       "This is some sample text for the dynamic element.",
       "imageLeft"
     );
@@ -95,7 +95,7 @@ export default function Home() {
       {/* banner section */}
       <div className="w-full">
         <img
-          src="https://via.placeholder.com/1920x600"
+          src="/images/banner1920x800placeholder.jpg"
           alt="Banner"
           className="w-full h-96 object-cover"
         />
