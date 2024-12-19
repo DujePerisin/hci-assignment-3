@@ -12,6 +12,8 @@ export default function Blog() {
       <p className="text-2xl font-mono mt-6">Considering implementing a filter-based search for all the blogs.....</p>
       <p className="text-2xl font-mono">....in future development</p>
 
+      
+
     </main>
   )
 }

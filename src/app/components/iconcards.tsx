@@ -44,4 +44,34 @@ export function createImageArticle1(
       dynamicContent.appendChild(element);
     }
   }
+
+  // utils/createDynamicElement.ts
+export const createDynamicElement = (
+    blog: { id: number; title: string },
+    container: HTMLElement
+  ) => {
+    // Create the card container
+    const card = document.createElement("div");
+    card.className =
+      "border rounded-lg p-4 shadow hover:shadow-md transition";
+  
+    // Create the title
+    const title = document.createElement("h2");
+    title.textContent = blog.title;
+    title.className = "font-semibold";
+  
+    // Create the link
+    const link = document.createElement("a");
+    link.href = `/blog/${blog.id}`;
+    link.textContent = "Read Blog →";
+    link.className = "text-blue-500 mt-2 inline-block";
+  
+    // Append the title and link to the card
+    card.appendChild(title);
+    card.appendChild(link);
+  
+    // Append the card to the container
+    container.appendChild(card);
+  };
+  
   
