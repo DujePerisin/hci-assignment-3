@@ -17,20 +17,32 @@ export default function Home() {
   const postsPerPage = 3;                            // number of blog posts per page
 
   useEffect(() => {
-    createImageArticle1(
-      "dynamic-container",
-      "images/Designer.jpeg", // Replace with your image URL
-      "IveBlog is your trusted source for research insights, market trends, and business strategies. Discover the latest in investment opportunities and connect with thought leaders.",
-      "imageLeft" // Change to "imageRight" for reversed layout
-    );
+    // createImageArticle1(
+    //   "dynamic-container",
+    //   "images/Designer.jpeg", // Replace with your image URL
+    //   "IveBlog is your trusted source for research insights, market trends, and business strategies. Discover the latest in investment opportunities and connect with thought leaders.",
+    //   "imageLeft" // Change to "imageRight" for reversed layout
+    // );
     
+    createImageArticle2(
+      "dynamic-container",
+      "images/leftsidearticlephoto.jpg", // Replace with your image URL
+      "Discover cutting-edge strategies for business investment on IveBlog.",
+      "imageRight" // Change to "imageLeft" for text on the left
+    );
+
       createImageArticle2(
         "dynamic-container",
-        "images/Designer.jpeg", // Replace with your image URL
-        "Discover cutting-edge strategies for business investment on IveBlog. Stay ahead with expert insights.",
+        "images/graph.png", // Replace with your image URL
+        "Stay ahead with expert insights and never miss out on newest developments.",
+        "imageLeft" // Change to "imageLeft" for text on the left
+      );
+      createImageArticle2(
+        "dynamic-container",
+        "images/piechart.jpg", // Replace with your image URL
+        "Calculated, analysed and organized business data all in a single place",
         "imageRight" // Change to "imageLeft" for text on the left
       );
-    
     
 
     const fetchBlogs = async () => {

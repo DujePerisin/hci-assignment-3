@@ -152,7 +152,7 @@ export const createDynamicElement = (
       textDiv.className = `
         absolute top-0 h-full flex items-center p-6 md:p-10
         ${layoutConfig === "imageLeft" ? "left-0" : "right-0"}
-        text-white font-bold text-2xl md:text-4xl lg:text-5xl leading-snug
+        text-black font-bold text-2xl md:text-4xl lg:text-5xl leading-snug
         bg-gradient-to-${layoutConfig === "imageLeft" ? "r" : "l"} from-black/60 via-black/30 to-transparent
       `;
   
@@ -167,4 +167,3 @@ export const createDynamicElement = (
       dynamicContent.appendChild(element);
     }
   }
-  
