@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { createImageArticle1 } from "./components/iconcards";
 import { createImageArticle2 } from "./components/iconcards";
 
 interface Blog {
@@ -17,13 +16,6 @@ export default function Home() {
   const postsPerPage = 3;                            // number of blog posts per page
 
   useEffect(() => {
-    // createImageArticle1(
-    //   "dynamic-container",
-    //   "images/Designer.jpeg", // Replace with your image URL
-    //   "IveBlog is your trusted source for research insights, market trends, and business strategies. Discover the latest in investment opportunities and connect with thought leaders.",
-    //   "imageLeft" // Change to "imageRight" for reversed layout
-    // );
-    
     createImageArticle2(
       "dynamic-container",
       "images/leftsidearticlephoto.jpg", // Replace with your image URL
