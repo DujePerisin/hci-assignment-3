@@ -72,17 +72,7 @@ export default function Home() {
         </div>
       </nav> */}
 
-      {/* Banner Section */}
-      <div className="w-full relative overflow-hidden">
-        <img
-          src="/images/banner1920x800placeholder.jpg"
-          alt="Banner"
-          className="w-full h-64 sm:h-80 md:h-96 object-cover"
-        />
-        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-xl">
-          Welcome to Our Scientific Blog
-        </h1>
-      </div>
+      
 
       {/* Local Navigation */}
       
@@ -97,6 +87,30 @@ export default function Home() {
             Travel Spotlights
           </a>
         </div>
+        {/* Banner Section */}
+      <div className="w-full relative overflow-hidden">
+        <img
+          src="/images/Designer.jpeg"
+          alt="Banner"
+          className="w-full h-64 sm:h-80 md:h-96 object-cover"
+        />
+        {/* <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-xl">
+          Welcome to Our Scientific Blog
+        </h1> */}
+      </div>
+
+        {/* Introduction Section */}
+      <section className="container mx-auto p-3 bg-gradient-to-b from-white to-gray-50 shadow-lg rounded-2xl mt-12 text-center">
+        <h2 className="text-xl sm:text-xl md:text-xl lg:text-xl xl:text-2xl font-bold text-indigo-600 mb-4 tracking-tight">
+          Driving Innovation in Business Investment
+        </h2>
+        <p className="text-base sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
+          Welcome to IveBlog, your trusted source for insights into business investments and cutting-edge research. 
+          Our mission is to empower professionals, entrepreneurs, and investors with knowledge that drives innovation 
+          and growth. Explore our comprehensive resources, in-depth articles, and practical guides designed to navigate 
+          the complex world of business ventures. Join us as we bridge the gap between research and real-world application.
+        </p>
+      </section>
       
 
       {/* Recent Blogs */}
@@ -116,7 +130,7 @@ export default function Home() {
                 <img
                   src="/images/article800x400placeholder.png"
                   alt="Blog Image"
-                  className="w-full h-32 sm:h-40 md:h-48 object-cover mb-4 rounded-lg"
+                  className="w-full h-20 sm:h-24 md:h-28 object-cover mb-4 rounded-lg"
                 />
                 <h3 className="text-lg sm:text-xl font-bold mb-2">
                   {blog.title}
