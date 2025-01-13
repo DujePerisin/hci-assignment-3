@@ -53,7 +53,21 @@ export function Navigation() {
             isMenuOpen ? "hidden" : ""
           }`}
         >
-          {pages.map((page, index) => processPage(page, index))} {/* need to implement media query breakpoints for a width range 1024px-1279px REDUCE FONT */}
+          {pages.map((page, index) => (
+            <li key={index}>
+              <Link
+                href={page.path}
+                className={`${
+                  pathname.startsWith(page.path)
+                    ? "font-extrabold text-indigo-600"
+                    : "text-gray-700"
+                } hover:text-indigo-600 transition whitespace-nowrap lg:text-sm xl:text-base`}
+                onClick={() => setIsMenuOpen(false)} // Close menu on click
+              >
+                {page.title}
+              </Link>
+            </li>
+          ))}
         </ul>
 
         {/* Sign In and Log In Buttons */}
