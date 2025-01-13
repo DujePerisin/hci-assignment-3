@@ -76,34 +76,6 @@ export default function Home() {
 
   return (
     <main className="bg-white min-h-screen font-sans text-gray-900">
-      {/* Sticky Navigation Bar */}
-      {/* <nav className="sticky top-0 z-20 bg-gradient-to-r from-indigo-500 to-purple-600 shadow-md">
-        <div className="container mx-auto flex justify-between items-center p-6">
-          <span className="text-3xl font-extrabold text-white">MY BLOG</span>
-          <ul className="hidden md:flex space-x-8 text-white text-lg">
-            <li>
-              <a href="#recent-blogs" className="hover:text-indigo-200">
-                Recent Blogs
-              </a>
-            </li>
-            <li>
-              <a href="#research-highlights" className="hover:text-indigo-200">
-                Research Highlights
-              </a>
-            </li>
-            <li>
-              <a href="#travel-spotlights" className="hover:text-indigo-200">
-                Travel Spotlights
-              </a>
-            </li>
-          </ul>
-          
-          <button className="md:hidden text-white text-2xl">&#9776;</button>
-        </div>
-      </nav> */}
-
-      
-
       {/* Local Navigation */}
       
         <div className="container mx-auto flex justify-end items-center py-4 px-6 space-x-4 sm:space-x-8">
@@ -124,9 +96,6 @@ export default function Home() {
           alt="Banner"
           className="w-full h-64 sm:h-80 md:h-96 object-cover"
         />
-        {/* <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-xl">
-          Welcome to Our Scientific Blog
-        </h1> */}
       </div>
 
         {/* Introduction Section */}
@@ -162,7 +131,7 @@ export default function Home() {
                 className="bg-white shadow-md rounded-lg p-4 border border-gray-200 flex-shrink-0 w-full sm:w-[85%] md:w-[30%]"
               >
                 <img
-                  src="/images/article800x400placeholder.png"
+                  src="/images/Designer.jpeg"
                   alt="Blog Image"
                   className="w-full h-20 sm:h-24 md:h-28 object-cover mb-4 rounded-lg"
                 />
@@ -211,48 +180,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Research Highlights */}
-      <section id="research-highlights" className="container mx-auto p-8 bg-gray-50">
-        <h2 className="text-center text-3xl sm:text-4xl font-bold text-indigo-600 mb-8">
-          Research Highlights
-        </h2>
-        <div className="flex flex-wrap justify-center gap-8">
-          {/* Example Highlight */}
-          <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200 w-full sm:w-[48%] md:w-[30%]">
-            <img
-              src="/images/researchhighlight.jpg"
-              alt="Highlight"
-              className="w-full h-40 object-cover rounded-lg mb-4"
-            />
-            <h3 className="text-xl font-bold mb-2">Breakthrough in AI</h3>
-            <p className="text-gray-600 text-sm">
-              Explore the latest breakthrough in artificial intelligence...
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Travel Spotlights */}
-      <section id="travel-spotlights" className="container mx-auto p-8">
-        <h2 className="text-center text-3xl sm:text-4xl font-bold text-indigo-600 mb-8">
-          Travel Spotlights
-        </h2>
-        <div className="flex flex-wrap justify-center gap-8">
-          {/* Example Travel Spotlight */}
-          <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200 w-full sm:w-[48%] md:w-[30%]">
-            <img
-              src="/images/travelspotlight.jpg"
-              alt="Spotlight"
-              className="w-full h-40 object-cover rounded-lg mb-4"
-            />
-            <h3 className="text-xl font-bold mb-2">Conference in Paris</h3>
-            <p className="text-gray-600 text-sm">
-              Highlights from the international AI conference in Paris...
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Meet the Team */}
       <section id="meet-the-team" className="container mx-auto p-8 bg-gray-50">
         <h2 className="text-center text-3xl sm:text-4xl font-bold text-indigo-600 mb-8">
@@ -267,7 +194,7 @@ export default function Home() {
           className="w-24 h-24 object-cover rounded-full mb-4"
         />
         <h3 className="text-lg font-bold mb-1">Dr. Mark Lee</h3>
-        <p className="text-gray-600 text-sm">Astrophysicist</p>
+        <p className="text-gray-600 text-sm">Market Analyst</p>
       </div>
 
       {/* Add more team members as needed */}
@@ -278,7 +205,7 @@ export default function Home() {
           className="w-24 h-24 object-cover rounded-full mb-4"
         />
         <h3 className="text-lg font-bold mb-1">Dr. Sarah Kim</h3>
-        <p className="text-gray-600 text-sm">Climate Scientist</p>
+        <p className="text-gray-600 text-sm">Cryptocurrency Expert</p>
       </div>
 
       <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200 w-full sm:w-[48%] md:w-[22%] flex flex-col items-center text-center">
@@ -292,6 +219,158 @@ export default function Home() {
       </div>
     </div>
   </section>
+
+
+      {/* Research Highlights */}
+<section id="research-highlights" className="container mx-auto p-8 bg-gray-50">
+  <h2 className="text-center text-3xl sm:text-4xl font-bold text-indigo-600 mb-8">
+    Research Highlights
+  </h2>
+  <div className="flex flex-wrap justify-center gap-8">
+    {/* Research Highlight 1 */}
+    <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200 w-full sm:w-[48%] md:w-[30%]">
+      <img
+        src="/images/ai.jpg"
+        alt="Highlight"
+        className="w-full h-40 object-cover rounded-lg mb-4"
+      />
+      <h3 className="text-xl font-bold mb-2">Breakthrough in AI</h3>
+      <p className="text-gray-600 text-sm">
+        Explore the latest breakthrough in artificial intelligence...
+      </p>
+      <a
+        href="#"
+        className="inline-block mt-4 px-4 py-2 bg-indigo-600 text-white text-sm font-bold rounded-lg hover:bg-indigo-700 transition"
+      >
+        Read More
+      </a>
+    </div>
+
+    {/* Research Highlight 2 */}
+    <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200 w-full sm:w-[48%] md:w-[30%]">
+      <img
+        src="/images/roboticsphoto.jpg"
+        alt="Highlight"
+        className="w-full h-40 object-cover rounded-lg mb-4"
+      />
+      <h3 className="text-xl font-bold mb-2">Advances in Robotics</h3>
+      <p className="text-gray-600 text-sm">
+        Discover groundbreaking advancements in robotics and automation...
+      </p>
+      <a
+        href="#"
+        className="inline-block mt-4 px-4 py-2 bg-indigo-600 text-white text-sm font-bold rounded-lg hover:bg-indigo-700 transition"
+      >
+        Read More
+      </a>
+    </div>
+
+    {/* Research Highlight 3 */}
+    <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200 w-full sm:w-[48%] md:w-[30%]">
+      <img
+        src="/images/quantum.jpg"
+        alt="Highlight"
+        className="w-full h-40 object-cover rounded-lg mb-4"
+      />
+      <h3 className="text-xl font-bold mb-2">Quantum Computing</h3>
+      <p className="text-gray-600 text-sm">
+        Insights into the revolutionary developments in quantum computing...
+      </p>
+      <a
+        href="#"
+        className="inline-block mt-4 px-4 py-2 bg-indigo-600 text-white text-sm font-bold rounded-lg hover:bg-indigo-700 transition"
+      >
+        Read More
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+      {/* Our journey so far Section */}
+      <section className="container mx-auto p-3 bg-gradient-to-b from-white to-gray-50 shadow-lg rounded-2xl mt-12 text-center">
+        <h2 className="text-xl sm:text-xl md:text-xl lg:text-xl xl:text-2xl font-bold text-indigo-600 mb-4 tracking-tight">
+          From Small Beginnings to Bold Aspirations
+        </h2>
+        <p className="text-base sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
+        Every story has a beginning, and ours started with a simple yet ambitious idea: to create a space where knowledge, innovation, and collaboration could thrive. With just a handful of passionate individuals, we launched our company as a modest venture, driven by the desire to make an impact despite our limited resources.
+        In those early days, we worked tirelessly, wearing multiple hats and learning through every success and setback. Each step, no matter how small, brought us closer to building something meaningful. Though our team remains small, we pride ourselves on fostering a culture of determination, creativity, and resilience.
+        The road ahead is full of challenges, but it’s also rich with opportunities. With our passion as our compass and growth as our goal, we’re ready to transform our dreams into a thriving reality. Together, we’re not just building a company—we’re shaping a brighter future.
+        </p>
+      </section>
+
+      <section className="dynamic-content-container mt-8" id="dynamic-container">
+
+      </section>
+
+
+      {/* Travel Spotlights */}
+<section id="travel-spotlights" className="container mx-auto p-8">
+  <h2 className="text-center text-3xl sm:text-4xl font-bold text-indigo-600 mb-8">
+    Travel Spotlights
+  </h2>
+  <div className="flex flex-wrap justify-center gap-8">
+    {/* Travel Spotlight 1 */}
+    <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200 w-full sm:w-[48%] md:w-[30%]">
+      <img
+        src="/images/paris.jpg"
+        alt="Spotlight"
+        className="w-full h-40 object-cover rounded-lg mb-4"
+      />
+      <h3 className="text-xl font-bold mb-2">Conference in Paris</h3>
+      <p className="text-gray-600 text-sm">
+        Highlights from the international AI conference in Paris...
+      </p>
+      <a
+        href="/travel"
+        className="inline-block mt-4 px-4 py-2 bg-indigo-600 text-white text-sm font-bold rounded-lg hover:bg-indigo-700 transition"
+      >
+        Learn More
+      </a>
+    </div>
+
+    {/* Travel Spotlight 2 */}
+    <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200 w-full sm:w-[48%] md:w-[30%]">
+      <img
+        src="/images/tokyo.jpg"
+        alt="Spotlight"
+        className="w-full h-40 object-cover rounded-lg mb-4"
+      />
+      <h3 className="text-xl font-bold mb-2">Summit in Tokyo</h3>
+      <p className="text-gray-600 text-sm">
+        Key insights from the global business summit held in Tokyo...
+      </p>
+      <a
+        href="/travel"
+        className="inline-block mt-4 px-4 py-2 bg-indigo-600 text-white text-sm font-bold rounded-lg hover:bg-indigo-700 transition"
+      >
+        Learn More
+      </a>
+    </div>
+
+    {/* Travel Spotlight 3 */}
+    <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200 w-full sm:w-[48%] md:w-[30%]">
+      <img
+        src="/images/newyork.jpg"
+        alt="Spotlight"
+        className="w-full h-40 object-cover rounded-lg mb-4"
+      />
+      <h3 className="text-xl font-bold mb-2">Workshop in New York</h3>
+      <p className="text-gray-600 text-sm">
+        A closer look at the innovative workshop series hosted in NYC...
+      </p>
+      <a
+        href="/travel"
+        className="inline-block mt-4 px-4 py-2 bg-indigo-600 text-white text-sm font-bold rounded-lg hover:bg-indigo-700 transition"
+      >
+        Learn More
+      </a>
+    </div>
+  </div>
+</section>
+
+    
 
   {/* Footer */}
   <footer className="bg-gray-800 text-white text-center py-6">
