@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createImageArticle1 } from "./components/iconcards";
+import { createImageArticle2 } from "./components/iconcards";
 
 interface Blog {
   id: number;
@@ -15,6 +17,22 @@ export default function Home() {
   const postsPerPage = 3;                            // number of blog posts per page
 
   useEffect(() => {
+    createImageArticle1(
+      "dynamic-container",
+      "images/Designer.jpeg", // Replace with your image URL
+      "IveBlog is your trusted source for research insights, market trends, and business strategies. Discover the latest in investment opportunities and connect with thought leaders.",
+      "imageLeft" // Change to "imageRight" for reversed layout
+    );
+    
+      createImageArticle2(
+        "dynamic-container",
+        "images/Designer.jpeg", // Replace with your image URL
+        "Discover cutting-edge strategies for business investment on IveBlog. Stay ahead with expert insights.",
+        "imageRight" // Change to "imageLeft" for text on the left
+      );
+    
+    
+
     const fetchBlogs = async () => {
       const res = await fetch(
         "https://jsonplaceholder.typicode.com/posts?_limit=30"
@@ -110,6 +128,10 @@ export default function Home() {
           and growth. Explore our comprehensive resources, in-depth articles, and practical guides designed to navigate 
           the complex world of business ventures. Join us as we bridge the gap between research and real-world application.
         </p>
+      </section>
+
+      <section className="dynamic-content-container mt-8" id="dynamic-container">
+
       </section>
       
 
