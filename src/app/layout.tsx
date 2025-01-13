@@ -15,18 +15,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-/*
-// Define metadata for each route
-const metadataMap = {
-  "/": { title: "Home - HCI 2024/2025", description: "The home of all things you are about to explore." },
-  "/about": { title: "About Us - HCI 2024/2025", description: "Learn more about us and what we do." },
-  "/blog": { title: "Research Blogs - HCI 2024/2025", description: "Learn more about us and what we do." },
-  "/contact": { title: "Contact us - HCI 2024/2025", description: "Get in touch with us!" },
-  "/education": { title: "Education section - HCI 2024/2025", description: "Learn more about the topics we have covered." },
-  "/forum": { title: "Forum - HCI 2024/2025", description: "Share your ideas and help other achieve theirs." },
-  "/travel": { title: "Business travels - HCI 2024/2025", description: "Quick look into our conferences, networking events and more." },
-};*/
-
 export const metadata: Metadata = {
   title: {
     template: "%s - dperis00 HCI2024/25",
@@ -48,8 +36,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* Only one Navigation bar */}
         <Navigation />
-        {children}
+        {/* Render children without including another Navigation */}
+        <main>{children}</main>
       </body>
     </html>
   );
