@@ -45,7 +45,6 @@
 //     }
 //   }
 
-  // utils/createDynamicElement.ts
 export const createDynamicElement = (
     blog: { id: number; title: string },
     container: HTMLElement

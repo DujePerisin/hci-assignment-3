@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { createImageArticle2 } from "./components/iconcards";
+import { createImageArticle2 } from "./components/articleCards";
 import MeetTheTeam from "./components/meetTheTeam";
 import ResearchHighlights from "./components/researchHighlights";
 import TravelSpotlights from "./components/travelSpotlights";
@@ -14,7 +14,7 @@ interface Blog {
 
 export default function Home() {
   const [blogs, setBlogs] = useState<Blog[]>([]);    // state variable which stores all the fetched blog posts, initial value empty array of "Blog" type of objects
-                                                     // used useState because component will re-render whenever we update "blogs"
+  // used useState because component will re-render whenever we update "blogs"
   const [currentPage, setCurrentPage] = useState(1); // keeps track of the current page, setCurrentPage function will +/- the count
   const postsPerPage = 3;                            // number of blog posts per page
 
@@ -26,19 +26,19 @@ export default function Home() {
       "imageRight" // Change to "imageLeft" for text on the left
     );
 
-      createImageArticle2(
-        "dynamic-container",
-        "images/graph.png", // Replace with your image URL
-        "Stay ahead with expert insights and never miss out on newest developments.",
-        "imageLeft" // Change to "imageLeft" for text on the left
-      );
-      createImageArticle2(
-        "dynamic-container",
-        "images/piechart.jpg", // Replace with your image URL
-        "Calculated, analysed and organized business data all in a single place",
-        "imageRight" // Change to "imageLeft" for text on the left
-      );
-    
+    createImageArticle2(
+      "dynamic-container",
+      "images/graph.png", // Replace with your image URL
+      "Stay ahead with expert insights and never miss out on newest developments.",
+      "imageLeft" // Change to "imageLeft" for text on the left
+    );
+    createImageArticle2(
+      "dynamic-container",
+      "images/piechart.jpg", // Replace with your image URL
+      "Calculated, analysed and organized business data all in a single place",
+      "imageRight" // Change to "imageLeft" for text on the left
+    );
+
 
     const fetchBlogs = async () => {
       const res = await fetch(
@@ -72,19 +72,19 @@ export default function Home() {
   return (
     <main className="bg-white min-h-screen font-sans text-gray-900">
       {/* Local Navigation */}
-      
-        <div className="container mx-auto flex justify-end items-center py-4 px-6 space-x-4 sm:space-x-8">
-          <a href="#recent-blogs" className="text-indigo-600 font-bold hover:text-indigo-800 transition text-sm sm:text-base">
-            Recent Blogs
-          </a>
-          <a href="#research-highlights" className="text-indigo-600 font-bold hover:text-indigo-800 transition text-sm sm:text-base">
-            Research Highlights
-          </a>
-          <a href="#travel-spotlights" className="text-indigo-600 font-bold hover:text-indigo-800 transition text-sm sm:text-base">
-            Travel Spotlights
-          </a>
-        </div>
-        {/* Banner Section */}
+
+      <div className="container mx-auto flex justify-end items-center py-4 px-6 space-x-4 sm:space-x-8">
+        <a href="#recent-blogs" className="text-indigo-600 font-bold hover:text-indigo-800 transition text-sm sm:text-base">
+          Recent Blogs
+        </a>
+        <a href="#research-highlights" className="text-indigo-600 font-bold hover:text-indigo-800 transition text-sm sm:text-base">
+          Research Highlights
+        </a>
+        <a href="#travel-spotlights" className="text-indigo-600 font-bold hover:text-indigo-800 transition text-sm sm:text-base">
+          Travel Spotlights
+        </a>
+      </div>
+      {/* Banner Section */}
       <div className="w-full relative overflow-hidden">
         <img
           src="/images/Designer.jpeg"
@@ -93,23 +93,19 @@ export default function Home() {
         />
       </div>
 
-        {/* Introduction Section */}
+      {/* Introduction Section */}
       <section className="container mx-auto p-3 bg-gradient-to-b from-white to-gray-50 shadow-lg rounded-2xl mt-12 text-center">
         <h2 className="text-xl sm:text-xl md:text-xl lg:text-xl xl:text-2xl font-bold text-indigo-600 mb-4 tracking-tight">
           Driving Innovation in Business Investment
         </h2>
         <p className="text-base sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-          Welcome to IveBlog, your trusted source for insights into business investments and cutting-edge research. 
-          Our mission is to empower professionals, entrepreneurs, and investors with knowledge that drives innovation 
-          and growth. Explore our comprehensive resources, in-depth articles, and practical guides designed to navigate 
+          Welcome to IveBlog, your trusted source for insights into business investments and cutting-edge research.
+          Our mission is to empower professionals, entrepreneurs, and investors with knowledge that drives innovation
+          and growth. Explore our comprehensive resources, in-depth articles, and practical guides designed to navigate
           the complex world of business ventures. Join us as we bridge the gap between research and real-world application.
         </p>
       </section>
-
-      <section className="dynamic-content-container mt-8" id="dynamic-container">
-
-      </section>
-      
+      <section className="dynamic-content-container mt-8" id="dynamic-container"></section>
 
       {/* Recent Blogs */}
       <section id="recent-blogs" className="container mx-auto p-8">
@@ -152,9 +148,8 @@ export default function Home() {
           <button
             onClick={handlePrevious}
             disabled={currentPage === 1}
-            className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-bold text-white bg-indigo-600 hover:bg-indigo-700 transition-all transform ${
-              currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
-            }`}
+            className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-bold text-white bg-indigo-600 hover:bg-indigo-700 transition-all transform ${currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
+              }`}
           >
             Previous
           </button>
@@ -164,11 +159,10 @@ export default function Home() {
           <button
             onClick={handleNext}
             disabled={currentPage === Math.ceil(blogs.length / postsPerPage)}
-            className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-bold text-white bg-indigo-600 hover:bg-indigo-700 transition-all transform ${
-              currentPage === Math.ceil(blogs.length / postsPerPage)
-                ? "opacity-50 cursor-not-allowed"
-                : ""
-            }`}
+            className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-bold text-white bg-indigo-600 hover:bg-indigo-700 transition-all transform ${currentPage === Math.ceil(blogs.length / postsPerPage)
+              ? "opacity-50 cursor-not-allowed"
+              : ""
+              }`}
           >
             Next
           </button>
@@ -176,11 +170,11 @@ export default function Home() {
       </section>
 
       {/* Meet the Team */}
-      <MeetTheTeam/>
+      <MeetTheTeam />
 
 
       {/* Research Highlights */}
-      <ResearchHighlights/>
+      <ResearchHighlights />
 
 
       {/* Our journey so far Section */}
@@ -189,25 +183,21 @@ export default function Home() {
           From Small Beginnings to Bold Aspirations
         </h2>
         <p className="text-base sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-        Every story has a beginning, and ours started with a simple yet ambitious idea: to create a space where knowledge, innovation, and collaboration could thrive. With just a handful of passionate individuals, we launched our company as a modest venture, driven by the desire to make an impact despite our limited resources.
-        In those early days, we worked tirelessly, wearing multiple hats and learning through every success and setback. Each step, no matter how small, brought us closer to building something meaningful. Though our team remains small, we pride ourselves on fostering a culture of determination, creativity, and resilience.
-        The road ahead is full of challenges, but it’s also rich with opportunities. With our passion as our compass and growth as our goal, we’re ready to transform our dreams into a thriving reality. Together, we’re not just building a company—we’re shaping a brighter future.
+          Every story has a beginning, and ours started with a simple yet ambitious idea: to create a space where knowledge, innovation, and collaboration could thrive. With just a handful of passionate individuals, we launched our company as a modest venture, driven by the desire to make an impact despite our limited resources.
+          In those early days, we worked tirelessly, wearing multiple hats and learning through every success and setback. Each step, no matter how small, brought us closer to building something meaningful. Though our team remains small, we pride ourselves on fostering a culture of determination, creativity, and resilience.
+          The road ahead is full of challenges, but it’s also rich with opportunities. With our passion as our compass and growth as our goal, we’re ready to transform our dreams into a thriving reality. Together, we’re not just building a company—we’re shaping a brighter future.
         </p>
       </section>
-
       <section className="dynamic-content-container mt-8" id="dynamic-container">
-
       </section>
 
-
       {/* Travel Spotlights */}
-      <TravelSpotlights/>
+      <TravelSpotlights />
 
-    
-
-  {/* Footer */}
-  <footer className="bg-gray-800 text-white text-center py-6">
-    <p className="text-sm">© 2025 My Scientific Blog | All Rights Reserved</p>
-  </footer>
-</main>
-); }
+      {/* Footer */}
+      <footer className="bg-gray-800 text-white text-center py-6">
+        <p className="text-sm">© 2025 My Scientific Blog | All Rights Reserved</p>
+      </footer>
+    </main>
+  );
+}
