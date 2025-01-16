@@ -2,6 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { createImageArticle2 } from "./components/iconcards";
+import MeetTheTeam from "./components/meetTheTeam";
+import ResearchHighlights from "./components/researchHighlights";
+import TravelSpotlights from "./components/travelSpotlights";
 
 interface Blog {
   id: number;
@@ -173,111 +176,11 @@ export default function Home() {
       </section>
 
       {/* Meet the Team */}
-      <section id="meet-the-team" className="container mx-auto p-8 bg-gray-50">
-        <h2 className="text-center text-3xl sm:text-4xl font-bold text-indigo-600 mb-8">
-          Meet the Team
-        </h2>
-        <div className="flex flex-wrap justify-center gap-8"> {/* Example Team Member */} <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200 w-full sm:w-[48%] md:w-[22%] flex flex-col items-center text-center"> <img src="/images/team1.jpg" alt="Team Member" className="w-24 h-24 object-cover rounded-full mb-4" /> <h3 className="text-lg font-bold mb-1">Dr. Alice Johnson</h3> <p className="text-gray-600 text-sm">AI Researcher</p> </div>
-              {/* Another Team Member */}
-      <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200 w-full sm:w-[48%] md:w-[22%] flex flex-col items-center text-center">
-        <img
-          src="/images/team2.jpg"
-          alt="Team Member"
-          className="w-24 h-24 object-cover rounded-full mb-4"
-        />
-        <h3 className="text-lg font-bold mb-1">Dr. Mark Lee</h3>
-        <p className="text-gray-600 text-sm">Market Analyst</p>
-      </div>
-
-      {/* Add more team members as needed */}
-      <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200 w-full sm:w-[48%] md:w-[22%] flex flex-col items-center text-center">
-        <img
-          src="/images/team3.jpg"
-          alt="Team Member"
-          className="w-24 h-24 object-cover rounded-full mb-4"
-        />
-        <h3 className="text-lg font-bold mb-1">Dr. Sarah Kim</h3>
-        <p className="text-gray-600 text-sm">Cryptocurrency Expert</p>
-      </div>
-
-      <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200 w-full sm:w-[48%] md:w-[22%] flex flex-col items-center text-center">
-        <img
-          src="/images/team4.jpg"
-          alt="Team Member"
-          className="w-24 h-24 object-cover rounded-full mb-4"
-        />
-        <h3 className="text-lg font-bold mb-1">Dr. James Smith</h3>
-        <p className="text-gray-600 text-sm">Data Scientist</p>
-      </div>
-    </div>
-  </section>
+      <MeetTheTeam/>
 
 
       {/* Research Highlights */}
-<section id="research-highlights" className="container mx-auto p-8 bg-gray-50">
-  <h2 className="text-center text-3xl sm:text-4xl font-bold text-indigo-600 mb-8">
-    Research Highlights
-  </h2>
-  <div className="flex flex-wrap justify-center gap-8">
-    {/* Research Highlight 1 */}
-    <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200 w-full sm:w-[48%] md:w-[30%]">
-      <img
-        src="/images/ai.jpg"
-        alt="Highlight"
-        className="w-full h-40 object-cover rounded-lg mb-4"
-      />
-      <h3 className="text-xl font-bold mb-2">Breakthrough in AI</h3>
-      <p className="text-gray-600 text-sm">
-        Explore the latest breakthrough in artificial intelligence...
-      </p>
-      <a
-        href="#"
-        className="inline-block mt-4 px-4 py-2 bg-indigo-600 text-white text-sm font-bold rounded-lg hover:bg-indigo-700 transition"
-      >
-        Read More
-      </a>
-    </div>
-
-    {/* Research Highlight 2 */}
-    <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200 w-full sm:w-[48%] md:w-[30%]">
-      <img
-        src="/images/roboticsphoto.jpg"
-        alt="Highlight"
-        className="w-full h-40 object-cover rounded-lg mb-4"
-      />
-      <h3 className="text-xl font-bold mb-2">Advances in Robotics</h3>
-      <p className="text-gray-600 text-sm">
-        Discover groundbreaking advancements in robotics and automation...
-      </p>
-      <a
-        href="#"
-        className="inline-block mt-4 px-4 py-2 bg-indigo-600 text-white text-sm font-bold rounded-lg hover:bg-indigo-700 transition"
-      >
-        Read More
-      </a>
-    </div>
-
-    {/* Research Highlight 3 */}
-    <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200 w-full sm:w-[48%] md:w-[30%]">
-      <img
-        src="/images/quantum.jpg"
-        alt="Highlight"
-        className="w-full h-40 object-cover rounded-lg mb-4"
-      />
-      <h3 className="text-xl font-bold mb-2">Quantum Computing</h3>
-      <p className="text-gray-600 text-sm">
-        Insights into the revolutionary developments in quantum computing...
-      </p>
-      <a
-        href="#"
-        className="inline-block mt-4 px-4 py-2 bg-indigo-600 text-white text-sm font-bold rounded-lg hover:bg-indigo-700 transition"
-      >
-        Read More
-      </a>
-    </div>
-  </div>
-</section>
-
+      <ResearchHighlights/>
 
 
       {/* Our journey so far Section */}
@@ -298,69 +201,7 @@ export default function Home() {
 
 
       {/* Travel Spotlights */}
-<section id="travel-spotlights" className="container mx-auto p-8">
-  <h2 className="text-center text-3xl sm:text-4xl font-bold text-indigo-600 mb-8">
-    Travel Spotlights
-  </h2>
-  <div className="flex flex-wrap justify-center gap-8">
-    {/* Travel Spotlight 1 */}
-    <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200 w-full sm:w-[48%] md:w-[30%]">
-      <img
-        src="/images/paris.jpg"
-        alt="Spotlight"
-        className="w-full h-40 object-cover rounded-lg mb-4"
-      />
-      <h3 className="text-xl font-bold mb-2">Conference in Paris</h3>
-      <p className="text-gray-600 text-sm">
-        Highlights from the international AI conference in Paris...
-      </p>
-      <a
-        href="/travel"
-        className="inline-block mt-4 px-4 py-2 bg-indigo-600 text-white text-sm font-bold rounded-lg hover:bg-indigo-700 transition"
-      >
-        Learn More
-      </a>
-    </div>
-
-    {/* Travel Spotlight 2 */}
-    <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200 w-full sm:w-[48%] md:w-[30%]">
-      <img
-        src="/images/tokyo.jpg"
-        alt="Spotlight"
-        className="w-full h-40 object-cover rounded-lg mb-4"
-      />
-      <h3 className="text-xl font-bold mb-2">Summit in Tokyo</h3>
-      <p className="text-gray-600 text-sm">
-        Key insights from the global business summit held in Tokyo...
-      </p>
-      <a
-        href="/travel"
-        className="inline-block mt-4 px-4 py-2 bg-indigo-600 text-white text-sm font-bold rounded-lg hover:bg-indigo-700 transition"
-      >
-        Learn More
-      </a>
-    </div>
-
-    {/* Travel Spotlight 3 */}
-    <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200 w-full sm:w-[48%] md:w-[30%]">
-      <img
-        src="/images/newyork.jpg"
-        alt="Spotlight"
-        className="w-full h-40 object-cover rounded-lg mb-4"
-      />
-      <h3 className="text-xl font-bold mb-2">Workshop in New York</h3>
-      <p className="text-gray-600 text-sm">
-        A closer look at the innovative workshop series hosted in NYC...
-      </p>
-      <a
-        href="/travel"
-        className="inline-block mt-4 px-4 py-2 bg-indigo-600 text-white text-sm font-bold rounded-lg hover:bg-indigo-700 transition"
-      >
-        Learn More
-      </a>
-    </div>
-  </div>
-</section>
+      <TravelSpotlights/>
 
     
 
